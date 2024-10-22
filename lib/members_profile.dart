@@ -23,7 +23,7 @@ class ThreadWritePage extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Get.to(() =>
-            MemberProfile1(memberName: memberName, profileImg: profileImg));
+            MemberProfile(memberName: memberName, profileImg: profileImg));
       },
       child: Container(
         width: 100,
@@ -59,7 +59,7 @@ class ThreadWritePage extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Get.to(() =>
-            MemberProfile1(memberName: memberName, profileImg: profileImg));
+            MemberProfile(memberName: memberName, profileImg: profileImg));
       },
       child: Container(
         width: 100,
@@ -95,7 +95,7 @@ class ThreadWritePage extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Get.to(() =>
-            MemberProfile1(memberName: memberName, profileImg: profileImg));
+            MemberProfile(memberName: memberName, profileImg: profileImg));
       },
       child: Container(
         width: 100,
@@ -131,7 +131,7 @@ class ThreadWritePage extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Get.to(() =>
-            MemberProfile1(memberName: memberName, profileImg: profileImg));
+            MemberProfile(memberName: memberName, profileImg: profileImg));
       },
       child: Container(
         width: 100,
