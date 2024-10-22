@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:thread_app_sample/member_profile.dart';
+import 'package:thread_app_sample/personal_profile.dart';
 
 class ThreadWritePage extends StatelessWidget {
   Widget memberCnt() {
@@ -30,21 +30,20 @@ class ThreadWritePage extends StatelessWidget {
         height: 100,
         color: Colors.blue,
         child: Column(
-          // 이미지와 텍스트를 위아래로 배치
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(100),
               child: Image.asset(
-                profileImg, // 이미지 경로로 이미지 표시
-                width: 120, // 원하는 크기로 설정
+                profileImg,
+                width: 120,
                 height: 120,
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(height: 20), // 이미지와 텍스트 사이에 간격 추가
+            SizedBox(height: 20),
             Text(
-              memberName, // 멤버 이름 표시
+              memberName,
               style: TextStyle(color: Colors.white),
             ),
           ],
@@ -67,21 +66,20 @@ class ThreadWritePage extends StatelessWidget {
         height: 100,
         color: Colors.blue,
         child: Column(
-          // 이미지와 텍스트를 위아래로 배치
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(100),
               child: Image.asset(
-                profileImg, // 이미지 경로로 이미지 표시
-                width: 120, // 원하는 크기로 설정
+                profileImg,
+                width: 120,
                 height: 120,
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(height: 20), // 이미지와 텍스트 사이에 간격 추가
+            SizedBox(height: 20),
             Text(
-              memberName, // 멤버 이름 표시
+              memberName,
               style: TextStyle(color: Colors.white),
             ),
           ],
@@ -104,21 +102,20 @@ class ThreadWritePage extends StatelessWidget {
         height: 100,
         color: Colors.blue,
         child: Column(
-          // 이미지와 텍스트를 위아래로 배치
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(100),
               child: Image.asset(
-                profileImg, // 이미지 경로로 이미지 표시
-                width: 120, // 원하는 크기로 설정
+                profileImg,
+                width: 120,
                 height: 120,
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(height: 20), // 이미지와 텍스트 사이에 간격 추가
+            SizedBox(height: 20),
             Text(
-              memberName, // 멤버 이름 표시
+              memberName,
               style: TextStyle(color: Colors.white),
             ),
           ],
@@ -141,21 +138,20 @@ class ThreadWritePage extends StatelessWidget {
         height: 100,
         color: Colors.blue,
         child: Column(
-          // 이미지와 텍스트를 위아래로 배치
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(100),
               child: Image.asset(
-                profileImg, // 이미지 경로로 이미지 표시
-                width: 120, // 원하는 크기로 설정
+                profileImg,
+                width: 120,
                 height: 120,
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(height: 20), // 이미지와 텍스트 사이에 간격 추가
+            SizedBox(height: 20),
             Text(
-              memberName, // 멤버 이름 표시
+              memberName,
               style: TextStyle(color: Colors.white),
             ),
           ],
