@@ -12,11 +12,11 @@ class ThreadWritePage extends StatelessWidget {
         _memberProfile(
           '조영은',
           'assets/images/jane.jpg',
-          'INFP',
+          'INFJ',
           28,
-          '입력 해주세요!',
+          '퍼블리셔 경력이 있습니다. 강아지, 고양이 동물 사랑합니다. 요즘은 수영, 프리다이빙에 새로운 취미가 생겼습니다.',
           '퍼블리셔, 리액트찍먹',
-          '굿 팔로워',
+          '굿 팔로워도 능력이다(?)',
         ),
         _memberProfile(
           '김재형',
