@@ -3,10 +3,22 @@ import 'package:flutter/material.dart';
 class MemberProfile extends StatelessWidget {
   final String memberName;
   final String profileImg;
+  final String mbti;
+  final int age;
+  final String introduction;
+  final String tmi;
+  final String comment;
 
-  const MemberProfile(
-      {Key? key, required this.memberName, required this.profileImg})
-      : super(key: key);
+  const MemberProfile({
+    Key? key,
+    required this.memberName,
+    required this.profileImg,
+    required this.mbti,
+    required this.age,
+    required this.introduction,
+    required this.tmi,
+    required this.comment, // 이 필드가 required로 선언됨
+  }) : super(key: key);
 
   Widget _profileBox(String title, String content) {
     return Container(
@@ -26,8 +38,7 @@ class MemberProfile extends StatelessWidget {
           ),
           SizedBox(height: 10), // 간격 추가
           Container(
-            width: 500,
-            height: 120,
+            width: double.infinity, // 화면 너비에 맞게 조정
             padding: EdgeInsets.all(12.0),
             decoration: BoxDecoration(
               color: Colors.white, // 흰색 배경
@@ -86,12 +97,12 @@ class MemberProfile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'MBTI: INFP',
+                        'MBTI: $mbti',
                         style: TextStyle(fontSize: 16, color: Colors.black54),
                       ),
                       SizedBox(width: 20),
                       Text(
-                        'Age: 28',
+                        'Age: $age',
                         style: TextStyle(fontSize: 16, color: Colors.black54),
                       ),
                     ],
@@ -113,9 +124,9 @@ class MemberProfile extends StatelessWidget {
             ),
 
             // 하단 프로필 박스 영역
-            _profileBox('자기소개', '자기소개 칸 입니다. 작성해주세요.'),
-            _profileBox('TMI', 'TMI 칸 입니다. 작성해주세요.'),
-            _profileBox('한마디', '한마디 칸 입니다. 작성해주세요.'),
+            _profileBox('자기소개', introduction),
+            _profileBox('TMI', tmi),
+            _profileBox('한마디', comment),
           ],
         ),
       ),
