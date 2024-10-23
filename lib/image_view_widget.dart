@@ -15,7 +15,7 @@ class ImageViewWidget extends StatelessWidget {
         pageSnapping: false,
         controller: PageController(viewportFraction: 0.7),
         children: List.generate(
-          images.length ?? 0,
+          images.length,
           (index) => Padding(
             padding: const EdgeInsets.all(4.0),
             child: ClipRRect(
